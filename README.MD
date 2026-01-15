@@ -5,6 +5,18 @@ Create tool that:
 
 Using C for system monitoring and Bash for automation and data presentation. 
 
+## Example of a report
+
+```bash
+Last measurements from System Monitor (sysmon):
+==== System Monitor ====
+2026-01-15 17:28:17
+CPU Usage: 6.05%
+Memory Usage: 91.77%
+Disk Usage: 21%
+========================
+```
+
 ## Implementation
 
 The CPU information is from /proc/stat
