@@ -8,7 +8,9 @@ Using C for system monitoring and Bash for automation and data presentation.
 ## Implementation
 
 The CPU information is from /proc/stat
+
 The memory information is from /proc/meminfo
+
 The disk information is from df -h 
 
 ## Scripts
@@ -39,18 +41,31 @@ Replace <number of reports> with the number of the last reports of sysmon. If th
 ## Project Structure
 system_monitor/
 ├── bin/
+
 │   └── 
+
 ├── src/
+
 │   ├── cpu.c
+
 │   ├── disk.c
+
 │   ├── meminfo.c
+
 │   ├── sysmon.c
+
 │   └── sysmon.h
+
 ├── scripts/
+
 │   └── init.sh
+
 ├── logs/
+
 │   └── 
+
 ├── Makefile
+
 └── README.md
 
 # Environment 
