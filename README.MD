@@ -40,6 +40,7 @@ Replace <number of reports> with the number of the last reports of sysmon. If th
 
 ## Project Structure
 system_monitor/
+
 ├── bin/
 
 │   └── 
