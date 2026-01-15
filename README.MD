@@ -1,11 +1,11 @@
-## Goal 
+# Goal 
 Create tool that:
 - Monitors CPU, memory and disk
 - Generates periodic reports
 
 Using C for system monitoring and Bash for automation and data presentation. 
 
-## Example of a report
+# Example of a report
 
 ```bash
 Last measurements from System Monitor (sysmon):
@@ -17,7 +17,7 @@ Disk Usage: 21%
 ========================
 ```
 
-## Implementation
+# Implementation
 
 The CPU information is from /proc/stat
 
@@ -25,11 +25,11 @@ The memory information is from /proc/meminfo
 
 The disk information is from df -h 
 
-## Scripts
+# Scripts
 
 There are two scripts available:
 
-# System monitor with refresh interval
+## System monitor with refresh interval
 
 Run with
 
@@ -40,7 +40,7 @@ Run with
 Replace <interval> with the number of seconds between each refresh. If this value is not provided, the default is 5 seconds interval.
 The output of this script is saved on /logs/sysmon.log file. 
 
-# Report with last measurements from sysmon.log file
+## Report with last measurements from sysmon.log file
 After running the init.sh script, this functionality is available. Run with
 
 ```bash
@@ -50,7 +50,7 @@ Replace <number of reports> with the number of the last reports of sysmon. If th
 
 *Only available if sysmon.log file already exists.*
 
-## Project Structure
+# Project Structure
 system_monitor/
 
 ├── bin/
@@ -81,8 +81,8 @@ system_monitor/
 
 └── README.md
 
-# Environment 
+## Environment 
 Debian 13
 
-# Dependencies 
+## Dependencies 
 sudo apt install -y build-essential make
