@@ -5,6 +5,7 @@
 
 int main() {
     printf("==== System Monitor ====\n");
+    print_timestamp();
     cpu_read();
     meminfo_read();
     disk_read();

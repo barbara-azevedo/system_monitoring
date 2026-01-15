@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-Wall
-SRC=src/sysmon.c src/cpu.c src/meminfo.c src/disk.c
+SRC=src/sysmon.c src/cpu.c src/meminfo.c src/disk.c src/timestamp.c
 OUT=bin/sysmon
 
 all:
